@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Frame Heart · Removes visible corner watermarks from AI images and video.</title>
+  <title>Frame Heart · Clean visible corner marks off AI pictures and video</title>
   <meta name="description" content="Clean corner watermarks off your AI pictures and video. Free for Windows.">
   <meta name="theme-color" content="#0E0D10">
   <meta property="og:title" content="Frame Heart">
@@ -16,7 +16,7 @@
   <link rel="apple-touch-icon" href="assets/icon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="heart.css">
   <link rel="stylesheet" href="theme.css">
   <script>document.documentElement.classList.add('js')</script>
@@ -26,28 +26,69 @@
 
   <header class="bar wrap">
     <a class="brand" href="#top" aria-label="Frame Heart, back to top"><img src="assets/frame-heart.svg" width="40" height="40" alt="">Frame Heart</a>
-    <nav aria-label="Sections"><a href="#features">What it does</a><a href="#questions">Questions</a><a href="https://inigo-code.github.io/">Heart Apps</a></nav>
-    <a class="button button-small" href="#download">Download</a>
+    <nav aria-label="Sections"><a href="#features">Features</a><a href="#see">See it</a><a href="#questions">Questions</a></nav>
+    <a class="button button-small" href="#get">Download</a>
   </header>
 
-  <section class="win-hero wrap" aria-labelledby="hero-title">
-    <div class="win-hero-text">
+  <!-- The headline across the page, then the words beside the window -->
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <div class="hero-text">
       <h1 id="hero-title" class="h1" data-reveal>Clean plates,<br> every frame</h1>
-      <p class="lede" data-reveal style="--i:1">Frame Heart finds a generator’s visible corner mark and removes it by itself, on pictures and on video, and it can enlarge pictures too.</p>
-      <p class="actions" data-reveal style="--i:2"><a class="button" href="https://github.com/inigo-code/frame-heart-site/releases/latest/download/FrameHeart.exe">Download for Windows</a><span class="soft">Free · 74 MB</span></p>
+      <div class="hero-side">
+        <p class="lede" data-reveal style="--i:1">Frame Heart finds a generator’s visible corner mark and removes it by itself, on pictures and on video. It can enlarge pictures too.</p>
+        <p class="actions" data-reveal style="--i:2"><a class="button" href="https://github.com/inigo-code/frame-heart-site/releases/latest/download/FrameHeart.exe">Download for Windows</a><a class="link" href="https://github.com/inigo-code/frame-heart-site/releases">or see every release</a></p>
+        <ul class="facts" data-reveal style="--i:3"><li>Free, no ads</li><li>No account</li><li>Nothing leaves your computer</li></ul>
+      </div>
     </div>
-    <figure class="window" data-reveal style="--i:2"><img src="assets/window.webp" width="1860" height="1200" alt="The Frame Heart window: a large before and after viewer, with the file and save settings on the right."></figure>
+    <figure class="hero-media"><div class="window" data-reveal style="--i:2"><img src="assets/remove.webp" width="1240" height="800" alt="The Frame Heart window: a large before and after viewer, with the file and save settings on the right."></div></figure>
   </section>
 
-  <section class="section wrap" aria-labelledby="see-title">
+  <!-- Three things it does, one picture each -->
+  <section id="features" class="section wrap" aria-labelledby="features-title">
+    <div class="head">
+      <h2 id="features-title" class="h2" data-reveal>Made for finished work</h2>
+      <p data-reveal style="--i:1">Drop in a file or a whole folder. Frame Heart works out what’s on each one, and your originals stay as they are.</p>
+    </div>
+    <div class="rows">
+      <article class="row" aria-labelledby="f1">
+        <div class="row-text">
+          <h3 id="f1" class="h3" data-reveal>It finds the mark for you</h3>
+          <p data-reveal style="--i:1">There’s nothing to choose. Frame Heart checks each file and picks the right way to clean it.</p>
+          <ul class="ticks" data-reveal style="--i:2"><li>The Gemini star at any size</li><li>Corner labels from Grok, Doubao, Jimeng, Kling and others</li><li>Whole folders, in one queue</li></ul>
+        </div>
+        <figure class="row-media"><div class="window" data-reveal><img src="assets/queue.webp" width="1240" height="800" alt="The Frame Heart queue: finished, running and waiting files, each with its status." loading="lazy"></div></figure>
+      </article>
+
+      <article class="row" aria-labelledby="f2">
+        <div class="row-text">
+          <h3 id="f2" class="h3" data-reveal>Video, on every frame</h3>
+          <p data-reveal style="--i:1">Each clip is studied first, so Frame Heart learns the star that clip really carries. Then it cleans every frame, in night scenes as well as bright ones.</p>
+          <ul class="ticks" data-reveal style="--i:2"><li>No dark shape left behind</li><li>Frames without the mark stay untouched</li><li>Sound and colour stay as they were</li></ul>
+        </div>
+        <figure class="row-media"><div class="window" data-reveal><img src="assets/remove.webp" width="1240" height="800" alt="The Frame Heart window showing a cleaned picture beside the original." loading="lazy"></div></figure>
+      </article>
+
+      <article class="row" aria-labelledby="f3">
+        <div class="row-text">
+          <h3 id="f3" class="h3" data-reveal>Enlarge in the same pass</h3>
+          <p data-reveal style="--i:1">Real-ESRGAN models run on your graphics card and take pictures to 2× or 4×. Photo and anime models are included, and more download when you ask.</p>
+          <ul class="ticks" data-reveal style="--i:2"><li>Works on the processor if you have no graphics card</li><li>Add your own ncnn models</li><li>Clean and enlarge together</li></ul>
+        </div>
+        <figure class="row-media"><div class="window" data-reveal><img src="assets/upscale.webp" width="1240" height="800" alt="The Frame Heart upscale page with its list of models." loading="lazy"></div></figure>
+      </article>
+    </div>
+  </section>
+
+  <!-- Before and after -->
+  <section id="see" class="section wrap" aria-labelledby="see-title">
     <div class="head">
       <h2 id="see-title" class="h2" data-reveal>Drag across to see it</h2>
-      <p class="soft" data-reveal style="--i:1">A generated picture with a Gemini-style star added, then cleaned by Frame Heart. No pixel ended up more than one level from the picture underneath.</p>
+      <p data-reveal style="--i:1">A generated picture with a Gemini-style star added, then cleaned by Frame Heart.</p>
     </div>
     <figure class="slider" data-reveal style="--i:2">
       <div class="compare" style="--pos: 82%">
-        <img src="assets/demo-after.webp" width="1280" height="854" alt="The same corner after Frame Heart, with no star.">
-        <img class="before" src="assets/demo-before.webp" width="1280" height="854" alt="A dusk landscape with a white star mark near the corner.">
+        <img src="assets/demo-after.webp" width="1280" height="854" alt="The same corner after Frame Heart, with no star." loading="lazy">
+        <img class="before" src="assets/demo-before.webp" width="1280" height="854" alt="A dusk landscape with a white star mark near the corner." loading="lazy">
         <span class="line" aria-hidden="true"></span>
         <span class="tag left">Before</span><span class="tag right">After</span>
         <input type="range" min="0" max="100" value="82" aria-label="Move between before and after">
@@ -55,22 +96,23 @@
     </figure>
   </section>
 
-  <section id="features" class="section wrap" aria-labelledby="features-title">
-    <div class="head"><h2 id="features-title" class="h2" data-reveal>What it does</h2></div>
-    <dl class="more" data-reveal><div data-reveal style="--i:0"><dt>It finds the mark for you</dt><dd>No menus for each generator. Drop a folder and Frame Heart works out what is on each file: the Gemini star at any size, or a corner label from Grok, Doubao, Kling and others.</dd></div><div data-reveal style="--i:1"><dt>Dark scenes stay clean</dt><dd>Frame Heart measures the mark’s real strength from the pixels. For video it learns the star that clip actually carries, so nothing is left behind in a night shot.</dd></div><div data-reveal style="--i:2"><dt>Your originals are safe</dt><dd>Every clean file is a new copy in a new folder. Frame Heart refuses to write over an original.</dd></div><div data-reveal style="--i:3"><dt>Enlarge in the same pass</dt><dd>Real-ESRGAN models run on your graphics card to take pictures to 2× or 4×. Photo and anime models are included, and more download when you ask.</dd></div></dl>
+  <!-- The smaller things, as a plain list -->
+  <section class="section wrap" aria-labelledby="more-title">
+    <div class="head"><h2 id="more-title" class="h2" data-reveal>And the small things</h2></div>
+    <dl class="more" data-reveal style="--i:1"><div><dt>Your originals are safe</dt><dd>Every clean file is a new copy in a new folder. Frame Heart refuses to write over an original.</dd></div><div><dt>Preview first</dt><dd>See the before and after on any file, with a slider, before you run the queue.</dd></div><div><dt>One file</dt><dd>No installer. Keep it in a folder and it keeps its own files beside it.</dd></div><div><dt>FFmpeg when you need it</dt><dd>Video needs FFmpeg, and Settings downloads it when you ask.</dd></div><div><dt>Stop any time</dt><dd>Stop a run or take a file off the list, and what’s finished stays finished.</dd></div><div><dt>Command line</dt><dd>Run it from a script when you have a lot to do.</dd></div></dl>
   </section>
 
-  <section id="download" class="section wrap" aria-labelledby="get-title">
-    <div class="get" data-reveal>
+  <!-- Get it -->
+  <section id="get" class="section wrap" aria-labelledby="get-title">
+    <div class="get">
       <div class="head">
-        <h2 id="get-title" class="h2">Get Frame Heart</h2>
-        <p>One portable file. No installer and no account.</p>
+        <h2 id="get-title" class="h2" data-reveal>Get Frame Heart</h2>
+        <p data-reveal style="--i:1">Free for Windows 10 and 11. One portable file, with nothing to install. Drop in a folder and see what it finds.</p>
       </div>
       <div class="ways">
-        <a class="way way-main" href="https://github.com/inigo-code/frame-heart-site/releases/latest/download/FrameHeart.exe"><img src="assets/frame-heart.svg" width="48" height="48" alt=""><span><strong>Download FrameHeart.exe</strong><span>Version 1.2.1 · 74 MB</span></span><span class="go">Download</span></a>
-        <a class="way" href="https://github.com/inigo-code/frame-heart-site/releases"><img src="assets/heart-apps.svg" width="48" height="48" alt=""><span><strong>All releases</strong><span>Notes and checksums on GitHub</span></span><span class="go">Open</span></a>
-        <div class="notes">
-          <p><strong>Windows 10 or 11</strong>64-bit, with the WebView2 runtime that Windows 11 already includes.</p>
+        <a class="way way-main" href="https://github.com/inigo-code/frame-heart-site/releases/latest/download/FrameHeart.exe" data-reveal><img src="assets/frame-heart.svg" width="48" height="48" alt=""><span><strong>Download FrameHeart.exe</strong><span>Version 1.2.2 · 74 MB</span></span><span class="go">Download</span></a>
+        <a class="way" href="https://github.com/inigo-code/frame-heart-site/releases" data-reveal style="--i:1"><span class="way-mark" aria-hidden="true">GH</span><span><strong>Every release on GitHub</strong><span>With notes and checksums</span></span><span class="go">Open</span></a>
+        <div class="notes" data-reveal style="--i:2">
           <p><strong>Windows may warn you</strong>The app isn’t code-signed, so SmartScreen can show “Windows protected your PC”. Choose More info, then Run anyway. Only do that for a file from this page.</p>
           <p><strong>The first open is slower</strong>It unpacks itself, which can take up to half a minute. It keeps its files in a folder beside the exe.</p>
         </div>
@@ -78,16 +120,23 @@
     </div>
   </section>
 
-  <section id="questions" class="section wrap" aria-labelledby="faq-title">
-    <div class="faq">
-      <div class="head"><h2 id="faq-title" class="h2" data-reveal>Questions</h2></div>
-      <div class="faq-list" data-reveal style="--i:1"><details name="faq" open><summary>What can it remove?</summary><p>Visible corner marks from AI generators: the Gemini sparkle, plus labels from Grok, Doubao, Jimeng, Tongyi, Qwen, Kling, Wenxin and Veo. It works on pictures and video.</p></details><details name="faq"><summary>Does it hide that a picture is AI-made?</summary><p>No. It removes the visible mark only. Invisible marks such as SynthID stay in the file. Please use Frame Heart on work you made or have the right to edit, and be open about AI work where that matters.</p></details><details name="faq"><summary>Will it touch a signature or a caption?</summary><p>It looks for see-through labels placed tight in a corner. Solid text, and text further in, is left alone. Very occasionally a label can be missed, or a see-through signature in the corner can look like one, so check your files with Preview.</p></details><details name="faq"><summary>Does anything get uploaded?</summary><p>No. Everything runs on your computer. Frame Heart only goes online when you ask it to download a model or FFmpeg.</p></details><details name="faq"><summary>Does it need a graphics card?</summary><p>Removing a mark doesn’t. Upscaling is much faster with one, and it can run on the processor if you choose CPU in Settings.</p></details></div>
+  <!-- A note from the maker -->
+  <section class="section wrap" aria-labelledby="note-title">
+    <div class="note">
+      <h2 id="note-title" class="h2" data-reveal>A note from Inigo</h2>
+      <div data-reveal style="--i:1">
+        <div class="copy"><p>Your files stay on your computer. There are no ads and nothing to buy, and there won’t be. If a mark gets through or something’s broken, write to me. I read everything.</p></div>
+        <p class="actions"><a class="button button-tone" href="mailto:inigo@tosstheworld.org?subject=Frame%20Heart">Write to Inigo</a></p>
+      </div>
     </div>
   </section>
 
-  <section class="section wrap privacy" aria-labelledby="privacy-title">
-    <h2 id="privacy-title" class="h3" data-reveal>Privacy</h2>
-    <p class="soft" data-reveal style="--i:1">Frame Heart has no accounts, no analytics and no ads. Your files and settings stay on your computer. It only connects to the internet for the work you ask it to do and to check for updates to its tools. This website uses Google Fonts and GitHub Pages, and sets no cookies of its own.</p>
+  <!-- Questions -->
+  <section id="questions" class="section wrap" aria-labelledby="faq-title">
+    <div class="faq">
+      <div class="head"><h2 id="faq-title" class="h2" data-reveal>Questions</h2></div>
+      <div class="faq-list" data-reveal style="--i:1"><details name="faq" open><summary>Is it free?</summary><p>Yes, completely: no ads, no subscriptions and no paid extras.</p></details><details name="faq"><summary>What can it remove?</summary><p>Visible corner marks from AI generators: the Gemini sparkle, plus labels from Grok, Doubao, Jimeng, Tongyi, Qwen, Kling, Wenxin and Veo. It works on pictures and video.</p></details><details name="faq"><summary>Does it hide that a picture is AI-made?</summary><p>No. It removes the visible mark only. Invisible marks such as SynthID stay in the file. Please use Frame Heart on work you made or have the right to edit, and be open about AI work where that matters.</p></details><details name="faq"><summary>Will it touch a signature or a caption?</summary><p>It looks for see-through labels placed tight in a corner. Solid text, and text further in, is left alone. Very occasionally a label can be missed, or a see-through signature in the corner can look like one, so check your files with Preview.</p></details><details name="faq"><summary>Does anything get uploaded?</summary><p>No. Everything runs on your computer.</p></details><details name="faq"><summary>Does it need a graphics card?</summary><p>Removing a mark doesn’t. Upscaling is much faster with one, and it can run on the processor if you choose CPU in Settings.</p></details></div>
+    </div>
   </section>
 </main>
 
@@ -95,7 +144,7 @@
   <div class="wrap">
     <p class="foot-name" aria-hidden="true">Frame Heart</p>
     <div class="foot-cols">
-      <nav aria-label="Frame Heart"><h2>Frame Heart</h2><a href="https://github.com/inigo-code/frame-heart-site/releases/latest/download/FrameHeart.exe">Download</a><a href="https://github.com/inigo-code/frame-heart-site/releases">All releases</a></nav>
+      <nav aria-label="Frame Heart"><h2>Frame Heart</h2><a href="https://github.com/inigo-code/frame-heart-site/releases/latest/download/FrameHeart.exe">Download</a><a href="https://github.com/inigo-code/frame-heart-site/releases">All releases</a><a href="privacy.html">Privacy</a></nav>
       <nav aria-label="For Windows"><h2>For Windows</h2><a class="to-app" href="https://inigo-code.github.io/still-heart-site/"><img src="assets/still-heart.svg" width="24" height="24" alt="">Still Heart</a><a class="to-app" href="https://inigo-code.github.io/rush-heart-site/"><img src="assets/rush-heart.svg" width="24" height="24" alt="">Rush Heart</a></nav>
       <nav aria-label="For Android"><h2>For Android</h2><a class="to-app" href="https://inigo-code.github.io/prompt-heart-site/"><img src="assets/prompt-heart.png" width="24" height="24" alt="">Prompt Heart</a><a class="to-app" href="https://inigo-code.github.io/watch-heart-site/"><img src="assets/watch-heart.png" width="24" height="24" alt="">Watch Heart</a></nav>
       <nav aria-label="Heart Apps"><h2>Heart Apps</h2><a href="mailto:inigo@tosstheworld.org?subject=Frame%20Heart">inigo@tosstheworld.org</a><a class="to-home" href="https://inigo-code.github.io/"><img src="assets/heart-apps.svg" width="22" height="22" alt="">All Heart Apps</a></nav>
