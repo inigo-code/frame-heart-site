@@ -1,4 +1,4 @@
-// Backlot: each part rises once as it reaches the screen. Without this file everything is simply shown.
+// Spoolhouse: each part rises once as it reaches the screen. Without this file everything is simply shown.
 (() => {
   const targets = document.querySelectorAll('[data-reveal]');
   const show = (el) => el.classList.add('is-in');

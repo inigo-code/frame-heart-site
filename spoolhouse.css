@@ -1,4 +1,4 @@
-/* Backlot: the shared layout of the Backlot sites. Each page sets its own accent. */
+/* Spoolhouse: the shared layout of the Spoolhouse sites. Each page sets its own accent. */
 :root {
   --bg: #100F0E; --surface: #181614; --surface-2: #231F1C; --ink: #F3EEE7; --muted: #B5ADA2;
   --plates: #7FB0FF; --stills: #FF7A5C; --rushes: #F2B84B;
@@ -96,7 +96,7 @@ ul { padding: 0; list-style: none; }
 
 .privacy { display: grid; gap: 10px; max-width: 54rem; margin-inline: 0; }
 
-/* Backlot home */
+/* Spoolhouse home */
 .intro { display: grid; grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); gap: var(--gap); align-items: end; padding-block: clamp(2rem, 6vw, 4.5rem) clamp(1.5rem, 3vw, 2.25rem); }
 .fields { display: grid; gap: var(--gap); padding-top: var(--gap); }
 .field { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(1.5rem, 4vw, 3.5rem); align-items: end; overflow: hidden; padding: clamp(1.75rem, 4vw, 3.25rem) 0 0 clamp(1.75rem, 4vw, 3.25rem); border-radius: 22px; background: var(--field); color: var(--field-ink); --accent: var(--field-ink); --accent-ink: var(--field); }
