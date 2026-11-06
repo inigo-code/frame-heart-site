@@ -30,7 +30,7 @@
 .row { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
 .row:nth-child(even) { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
 .row-media { display: block; padding: 0; background: none; }
-.row-media .compare { aspect-ratio: 3 / 2; }
+.row-media .compare { width: 100%; aspect-ratio: 3 / 2; }
 
 /* A wall of pictures */
 .wall { display: grid; gap: 10px; margin-top: clamp(1.5rem, 3vw, 2.5rem); }
