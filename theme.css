@@ -1,0 +1,31 @@
+/* Frame Heart: a Heart App for Windows. The layout is heart.css; this adds the colour and the window. */
+:root { --accent: #7fb0ff; --accent-ink: #081322; --accent-hover: #a2c6ff; --field: #7fb0ff; --field-ink: #081322; }
+.brand img { border-radius: 0; }
+.win-hero { display: grid; gap: clamp(2rem, 5vw, 3.5rem); padding-block: clamp(2rem, 6vw, 4.5rem) 0; }
+.win-hero-text { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 22px var(--gap); align-items: end; }
+.win-hero-text .h1 { grid-row: span 2; }
+.win-hero-text .lede { max-width: 34ch; }
+.window { overflow: hidden; border-radius: 18px; background: var(--surface-2); }
+.window img { width: 100%; }
+.more { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.slider { max-width: 1040px; }
+.compare { position: relative; overflow: hidden; border-radius: 18px; aspect-ratio: 3 / 2; background: #000; touch-action: pan-y; }
+.compare img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.compare .before { clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
+.compare .line { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 2px; margin-left: -1px; background: #F3EEE7; pointer-events: none; }
+.compare .line::after { content: ""; position: absolute; top: 50%; left: 50%; width: 42px; height: 42px; border: 2px solid #F3EEE7; border-radius: 50%; transform: translate(-50%, -50%); background: rgba(14, 13, 16, 0.7); }
+.compare .tag { position: absolute; top: 14px; padding: 3px 10px; border-radius: 8px; background: rgba(14, 13, 16, 0.72); font-size: var(--s-small); font-weight: 500; pointer-events: none; }
+.compare .tag.left { left: 14px; }
+.compare .tag.right { right: 14px; }
+.compare input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; }
+.notes { display: grid; gap: 16px; margin-top: 8px; font-size: var(--s-small); }
+.notes strong { display: block; }
+.privacy { display: grid; gap: 10px; }
+.privacy p { max-width: 54rem; }
+@media (max-width: 960px) {
+  .win-hero-text { grid-template-columns: 1fr; }
+  .win-hero-text .h1 { grid-row: auto; }
+}
+@media (max-width: 680px) {
+  .more { grid-template-columns: 1fr; }
+}

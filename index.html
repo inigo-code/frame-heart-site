@@ -3,49 +3,50 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Plates · Removes visible corner watermarks from AI images and video.</title>
+  <title>Frame Heart · Removes visible corner watermarks from AI images and video.</title>
   <meta name="description" content="Clean corner watermarks off your AI pictures and video. Free for Windows.">
-  <meta name="theme-color" content="#100F0E">
-  <meta property="og:title" content="Plates">
-  <meta property="og:description" content="Clean corner watermarks off your AI pictures and video. Free for Windows.">
-  <meta property="og:image" content="https://inigo-code.github.io/plates-site/assets/preview.png">
+  <meta name="theme-color" content="#0E0D10">
+  <meta property="og:title" content="Frame Heart">
+  <meta property="og:description" content="Clean corner watermarks off your AI pictures and video. A free Heart App for Windows.">
+  <meta property="og:image" content="https://inigo-code.github.io/frame-heart-site/assets/preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/frame-heart.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/icon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="spoolhouse.css">
-  <style>:root { --accent: #7fb0ff; --accent-ink: #081322; --accent-hover: #a2c6ff; }</style>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="heart.css">
+  <link rel="stylesheet" href="theme.css">
   <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 <main id="top">
+
   <header class="bar wrap">
-    <a class="brand" href="#top" aria-label="Plates, back to top"><img src="assets/icon.svg" width="40" height="40" alt="">Plates</a>
-    <nav aria-label="Sections"><a href="#features">What it does</a><a href="#questions">Questions</a><a href="https://inigo-code.github.io/spoolhouse-site/">Spoolhouse</a></nav>
+    <a class="brand" href="#top" aria-label="Frame Heart, back to top"><img src="assets/frame-heart.svg" width="40" height="40" alt="">Frame Heart</a>
+    <nav aria-label="Sections"><a href="#features">What it does</a><a href="#questions">Questions</a><a href="https://inigo-code.github.io/">Heart Apps</a></nav>
     <a class="button button-small" href="#download">Download</a>
   </header>
 
-  <section class="hero wrap" aria-labelledby="hero-title">
-    <div class="hero-text">
+  <section class="win-hero wrap" aria-labelledby="hero-title">
+    <div class="win-hero-text">
       <h1 id="hero-title" class="h1" data-reveal>Clean plates,<br> every frame</h1>
-      <p class="lede" data-reveal style="--i:1">Plates finds a generator’s visible corner mark and removes it by itself, on pictures and on video, and it can enlarge pictures too.</p>
-      <p class="actions" data-reveal style="--i:2"><a class="button" href="https://github.com/inigo-code/plates-site/releases/latest/download/Plates.exe">Download for Windows</a><span class="soft">Free · 74 MB</span></p>
+      <p class="lede" data-reveal style="--i:1">Frame Heart finds a generator’s visible corner mark and removes it by itself, on pictures and on video, and it can enlarge pictures too.</p>
+      <p class="actions" data-reveal style="--i:2"><a class="button" href="https://github.com/inigo-code/frame-heart-site/releases/latest/download/FrameHeart.exe">Download for Windows</a><span class="soft">Free · 74 MB</span></p>
     </div>
-    <figure class="window" data-reveal style="--i:2"><img src="assets/window.webp" width="1860" height="1200" alt="The Plates window: a large before and after viewer, with the file and save settings on the right."></figure>
+    <figure class="window" data-reveal style="--i:2"><img src="assets/window.webp" width="1860" height="1200" alt="The Frame Heart window: a large before and after viewer, with the file and save settings on the right."></figure>
   </section>
 
   <section class="section wrap" aria-labelledby="see-title">
     <div class="head">
       <h2 id="see-title" class="h2" data-reveal>Drag across to see it</h2>
-      <p data-reveal style="--i:1">A generated picture with a Gemini-style star added, then cleaned by Plates. No pixel ended up more than one level from the picture underneath.</p>
+      <p class="soft" data-reveal style="--i:1">A generated picture with a Gemini-style star added, then cleaned by Frame Heart. No pixel ended up more than one level from the picture underneath.</p>
     </div>
     <figure class="slider" data-reveal style="--i:2">
       <div class="compare" style="--pos: 82%">
-        <img src="assets/demo-after.webp" width="1280" height="854" alt="The same corner after Plates, with no star.">
+        <img src="assets/demo-after.webp" width="1280" height="854" alt="The same corner after Frame Heart, with no star.">
         <img class="before" src="assets/demo-before.webp" width="1280" height="854" alt="A dusk landscape with a white star mark near the corner.">
         <span class="line" aria-hidden="true"></span>
         <span class="tag left">Before</span><span class="tag right">After</span>
@@ -56,47 +57,54 @@
 
   <section id="features" class="section wrap" aria-labelledby="features-title">
     <div class="head"><h2 id="features-title" class="h2" data-reveal>What it does</h2></div>
-    <dl class="features"><div data-reveal style="--i:0"><dt class="h3">It finds the mark for you</dt><dd>No menus for each generator. Drop a folder and Plates works out what is on each file: the Gemini star at any size, or a corner label from Grok, Doubao, Kling and others.</dd></div><div data-reveal style="--i:1"><dt class="h3">Dark scenes stay clean</dt><dd>Plates measures the mark’s real strength from the pixels. For video it learns the star that clip actually carries, so nothing is left behind in a night shot.</dd></div><div data-reveal style="--i:2"><dt class="h3">Your originals are safe</dt><dd>Every clean file is a new copy in a new folder. Plates refuses to write over an original.</dd></div><div data-reveal style="--i:3"><dt class="h3">Enlarge in the same pass</dt><dd>Real-ESRGAN models run on your graphics card to take pictures to 2× or 4×. Photo and anime models are included, and more download when you ask.</dd></div></dl>
+    <dl class="more" data-reveal><div data-reveal style="--i:0"><dt>It finds the mark for you</dt><dd>No menus for each generator. Drop a folder and Frame Heart works out what is on each file: the Gemini star at any size, or a corner label from Grok, Doubao, Kling and others.</dd></div><div data-reveal style="--i:1"><dt>Dark scenes stay clean</dt><dd>Frame Heart measures the mark’s real strength from the pixels. For video it learns the star that clip actually carries, so nothing is left behind in a night shot.</dd></div><div data-reveal style="--i:2"><dt>Your originals are safe</dt><dd>Every clean file is a new copy in a new folder. Frame Heart refuses to write over an original.</dd></div><div data-reveal style="--i:3"><dt>Enlarge in the same pass</dt><dd>Real-ESRGAN models run on your graphics card to take pictures to 2× or 4×. Photo and anime models are included, and more download when you ask.</dd></div></dl>
   </section>
 
-  <section class="section wrap get" id="download" aria-labelledby="get-title">
-    <div class="get-main">
-      <h2 id="get-title" class="h2" data-reveal>Get Plates</h2>
-      <p class="lede" data-reveal style="--i:1">One portable file. No installer and no account.</p>
-      <p class="actions" data-reveal style="--i:2"><a class="button" href="https://github.com/inigo-code/plates-site/releases/latest/download/Plates.exe">Download Plates.exe</a><span class="soft">Version 1.1.1 · 74 MB</span></p>
-      <p data-reveal style="--i:3"><a class="link" href="https://github.com/inigo-code/plates-site/releases">All releases and checksums</a></p>
+  <section id="download" class="section wrap" aria-labelledby="get-title">
+    <div class="get" data-reveal>
+      <div class="head">
+        <h2 id="get-title" class="h2">Get Frame Heart</h2>
+        <p>One portable file. No installer and no account.</p>
+      </div>
+      <div class="ways">
+        <a class="way way-main" href="https://github.com/inigo-code/frame-heart-site/releases/latest/download/FrameHeart.exe"><img src="assets/frame-heart.svg" width="48" height="48" alt=""><span><strong>Download FrameHeart.exe</strong><span>Version 1.2.0 · 74 MB</span></span><span class="go">Download</span></a>
+        <a class="way" href="https://github.com/inigo-code/frame-heart-site/releases"><img src="assets/heart-apps.svg" width="48" height="48" alt=""><span><strong>All releases</strong><span>Notes and checksums on GitHub</span></span><span class="go">Open</span></a>
+        <div class="notes">
+          <p><strong>Windows 10 or 11</strong>64-bit, with the WebView2 runtime that Windows 11 already includes.</p>
+          <p><strong>Windows may warn you</strong>The app isn’t code-signed, so SmartScreen can show “Windows protected your PC”. Choose More info, then Run anyway. Only do that for a file from this page.</p>
+          <p><strong>The first open is slower</strong>It unpacks itself, which can take up to half a minute. It keeps its files in a folder beside the exe.</p>
+        </div>
+      </div>
     </div>
-    <dl class="steps" data-reveal style="--i:2">
-      <div><dt>Windows 10 or 11</dt><dd>64-bit, with the WebView2 runtime that Windows 11 already includes.</dd></div>
-      <div><dt>Windows may warn you</dt><dd>The app isn’t code-signed, so SmartScreen can show “Windows protected your PC”. Choose More info, then Run anyway. Only do that for a file from this page.</dd></div>
-      <div><dt>The first open is slower</dt><dd>It unpacks itself, which can take up to half a minute. It keeps its files in a folder beside the exe.</dd></div>
-    </dl>
   </section>
 
   <section id="questions" class="section wrap" aria-labelledby="faq-title">
     <div class="faq">
       <div class="head"><h2 id="faq-title" class="h2" data-reveal>Questions</h2></div>
-      <div class="faq-list" data-reveal style="--i:1"><details name="faq" open><summary>What can it remove?</summary><p>Visible corner marks from AI generators: the Gemini sparkle, plus labels from Grok, Doubao, Jimeng, Tongyi, Qwen, Kling, Wenxin and Veo. It works on pictures and video.</p></details><details name="faq"><summary>Does it hide that a picture is AI-made?</summary><p>No. It removes the visible mark only. Invisible marks such as SynthID stay in the file. Please use Plates on work you made or have the right to edit, and be open about AI work where that matters.</p></details><details name="faq"><summary>Will it touch a signature or a caption?</summary><p>It looks for see-through labels placed tight in a corner. Solid text, and text further in, is left alone. Very occasionally a label can be missed, or a see-through signature in the corner can look like one, so check your files with Preview.</p></details><details name="faq"><summary>Does anything get uploaded?</summary><p>No. Everything runs on your computer. Plates only goes online when you ask it to download a model or FFmpeg.</p></details><details name="faq"><summary>Does it need a graphics card?</summary><p>Removing a mark doesn’t. Upscaling is much faster with one, and it can run on the processor if you choose CPU in Settings.</p></details></div>
+      <div class="faq-list" data-reveal style="--i:1"><details name="faq" open><summary>What can it remove?</summary><p>Visible corner marks from AI generators: the Gemini sparkle, plus labels from Grok, Doubao, Jimeng, Tongyi, Qwen, Kling, Wenxin and Veo. It works on pictures and video.</p></details><details name="faq"><summary>Does it hide that a picture is AI-made?</summary><p>No. It removes the visible mark only. Invisible marks such as SynthID stay in the file. Please use Frame Heart on work you made or have the right to edit, and be open about AI work where that matters.</p></details><details name="faq"><summary>Will it touch a signature or a caption?</summary><p>It looks for see-through labels placed tight in a corner. Solid text, and text further in, is left alone. Very occasionally a label can be missed, or a see-through signature in the corner can look like one, so check your files with Preview.</p></details><details name="faq"><summary>Does anything get uploaded?</summary><p>No. Everything runs on your computer. Frame Heart only goes online when you ask it to download a model or FFmpeg.</p></details><details name="faq"><summary>Does it need a graphics card?</summary><p>Removing a mark doesn’t. Upscaling is much faster with one, and it can run on the processor if you choose CPU in Settings.</p></details></div>
     </div>
   </section>
 
   <section class="section wrap privacy" aria-labelledby="privacy-title">
     <h2 id="privacy-title" class="h3" data-reveal>Privacy</h2>
-    <p class="soft" data-reveal style="--i:1">Plates has no accounts, no analytics and no ads. Your files and settings stay on your computer. It only connects to the internet for the work you ask it to do and to check for updates to its tools. This website uses Google Fonts and GitHub Pages, and sets no cookies of its own.</p>
+    <p class="soft" data-reveal style="--i:1">Frame Heart has no accounts, no analytics and no ads. Your files and settings stay on your computer. It only connects to the internet for the work you ask it to do and to check for updates to its tools. This website uses Google Fonts and GitHub Pages, and sets no cookies of its own.</p>
   </section>
 </main>
 
 <footer class="foot">
   <div class="wrap">
-    <div class="bars" aria-hidden="true"><i class="b-plates"></i><i class="b-stills"></i><i class="b-rushes"></i></div>
+    <p class="foot-name" aria-hidden="true">Frame Heart</p>
     <div class="foot-cols">
-      <nav aria-label="Spoolhouse"><h2>Spoolhouse</h2><a class="to-app" href="https://inigo-code.github.io/stills-site/"><img src="assets/stills.svg" width="24" height="24" alt="">Stills</a><a class="to-app" href="https://inigo-code.github.io/rushes-site/"><img src="assets/rushes.svg" width="24" height="24" alt="">Rushes</a><a class="to-home" href="https://inigo-code.github.io/spoolhouse-site/"><img src="assets/spoolhouse.svg" width="22" height="22" alt="">All of Spoolhouse</a></nav>
-      <nav aria-label="Also by Inigo"><h2>Also by Inigo</h2><a class="to-app" href="https://inigo-code.github.io/"><img src="assets/heart-apps.svg" width="24" height="24" alt="">Heart Apps, for Android</a></nav>
-      <nav aria-label="Contact"><h2>Contact</h2><a href="mailto:inigo@tosstheworld.org?subject=Spoolhouse">inigo@tosstheworld.org</a><a href="https://github.com/inigo-code">GitHub</a></nav>
+      <nav aria-label="Frame Heart"><h2>Frame Heart</h2><a href="https://github.com/inigo-code/frame-heart-site/releases/latest/download/FrameHeart.exe">Download</a><a href="https://github.com/inigo-code/frame-heart-site/releases">All releases</a></nav>
+      <nav aria-label="For Windows"><h2>For Windows</h2><a class="to-app" href="https://inigo-code.github.io/still-heart-site/"><img src="assets/still-heart.svg" width="24" height="24" alt="">Still Heart</a><a class="to-app" href="https://inigo-code.github.io/rush-heart-site/"><img src="assets/rush-heart.svg" width="24" height="24" alt="">Rush Heart</a></nav>
+      <nav aria-label="For Android"><h2>For Android</h2><a class="to-app" href="https://inigo-code.github.io/prompt-heart-site/"><img src="assets/prompt-heart.png" width="24" height="24" alt="">Prompt Heart</a><a class="to-app" href="https://inigo-code.github.io/watch-heart-site/"><img src="assets/watch-heart.png" width="24" height="24" alt="">Watch Heart</a></nav>
+      <nav aria-label="Heart Apps"><h2>Heart Apps</h2><a href="mailto:inigo@tosstheworld.org?subject=Frame%20Heart">inigo@tosstheworld.org</a><a class="to-home" href="https://inigo-code.github.io/"><img src="assets/heart-apps.svg" width="22" height="22" alt="">All Heart Apps</a></nav>
     </div>
     <div class="foot-last"><p>© 2026 Inigo. Free apps, no ads.</p><a href="#top">Back to the top</a></div>
   </div>
 </footer>
-<script src="spoolhouse.js" defer></script>
+
+<script src="heart.js" defer></script>
+<script src="site.js" defer></script>
 </body>
 </html>
