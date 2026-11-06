@@ -35,12 +35,12 @@
     <div class="hero-text">
       <h1 id="hero-title" class="h1" data-reveal>Clean plates,<br> every frame</h1>
       <div class="hero-side">
-        <p class="lede" data-reveal style="--i:1">Frame Heart finds a generator’s visible corner mark and removes it by itself, on pictures and on video. It can enlarge pictures too.</p>
+        <p class="lede" data-reveal style="--i:1">Frame Heart finds a generator’s visible corner mark and removes it by itself, on pictures and on video. It works particularly well on images and videos made with Gemini.</p>
         <p class="actions" data-reveal style="--i:2"><a class="button" href="https://github.com/inigo-code/frame-heart-site/releases/latest/download/FrameHeart.exe">Download for Windows</a><a class="link" href="https://github.com/inigo-code/frame-heart-site/releases">or see every release</a></p>
-        <ul class="facts" data-reveal style="--i:3"><li>Free, no ads</li><li>No account</li><li>Nothing leaves your computer</li></ul>
+        <ul class="facts" data-reveal style="--i:3"><li>Free, no ads</li><li>No account</li><li>Best on Gemini images and video</li><li>Nothing leaves your computer</li></ul>
       </div>
     </div>
-    <figure class="hero-media"><div class="window" data-reveal style="--i:2"><img src="assets/remove.webp" width="1240" height="800" alt="The Frame Heart window: a large before and after viewer, with the file and save settings on the right."></div></figure>
+    <figure class="hero-media"><div class="window" data-reveal style="--i:2"><img src="assets/remove-wide.webp" width="1860" height="1200" alt="The Frame Heart window: a large before and after viewer, with the file and save settings on the right."></div></figure>
   </section>
 
   <!-- Three things it does, one picture each -->
@@ -56,7 +56,7 @@
           <p data-reveal style="--i:1">There’s nothing to choose. Frame Heart checks each file and picks the right way to clean it.</p>
           <ul class="ticks" data-reveal style="--i:2"><li>The Gemini star at any size</li><li>Corner labels from Grok, Doubao, Jimeng, Kling and others</li><li>Whole folders, in one queue</li></ul>
         </div>
-        <figure class="row-media"><div class="window" data-reveal><img src="assets/queue.webp" width="1240" height="800" alt="The Frame Heart queue: finished, running and waiting files, each with its status." loading="lazy"></div></figure>
+        <figure class="row-media"><div class="window" data-reveal><img src="assets/queue.webp" alt="The Frame Heart queue: finished, running and waiting files, each with its status." loading="lazy"></div></figure>
       </article>
 
       <article class="row" aria-labelledby="f2">
@@ -65,7 +65,13 @@
           <p data-reveal style="--i:1">Each clip is studied first, so Frame Heart learns the star that clip really carries. Then it cleans every frame, in night scenes as well as bright ones.</p>
           <ul class="ticks" data-reveal style="--i:2"><li>No dark shape left behind</li><li>Frames without the mark stay untouched</li><li>Sound and colour stay as they were</li></ul>
         </div>
-        <figure class="row-media"><div class="window" data-reveal><img src="assets/remove.webp" width="1240" height="800" alt="The Frame Heart window showing a cleaned picture beside the original." loading="lazy"></div></figure>
+        <figure class="row-media"><div class="compare" data-reveal style="--pos: 72%">
+          <img src="assets/night-after.webp" width="640" height="427" alt="The same night scene after Frame Heart, with no star.">
+          <img class="before" src="assets/night-before.webp" width="640" height="427" alt="A night scene from a compressed video, before and after Frame Heart.">
+          <span class="line" aria-hidden="true"></span>
+          <span class="tag left">Before</span><span class="tag right">After</span>
+          <input type="range" min="0" max="100" value="72" aria-label="Move between before and after">
+        </div></figure>
       </article>
 
       <article class="row" aria-labelledby="f3">
@@ -74,7 +80,7 @@
           <p data-reveal style="--i:1">Real-ESRGAN models run on your graphics card and take pictures to 2× or 4×. Photo and anime models are included, and more download when you ask.</p>
           <ul class="ticks" data-reveal style="--i:2"><li>Works on the processor if you have no graphics card</li><li>Add your own ncnn models</li><li>Clean and enlarge together</li></ul>
         </div>
-        <figure class="row-media"><div class="window" data-reveal><img src="assets/upscale.webp" width="1240" height="800" alt="The Frame Heart upscale page with its list of models." loading="lazy"></div></figure>
+        <figure class="row-media"><div class="window" data-reveal><img src="assets/upscale.webp" alt="The Frame Heart upscale page with its list of models." loading="lazy"></div></figure>
       </article>
     </div>
   </section>
@@ -87,8 +93,8 @@
     </div>
     <figure class="slider" data-reveal style="--i:2">
       <div class="compare" style="--pos: 82%">
-        <img src="assets/demo-after.webp" width="1280" height="854" alt="The same corner after Frame Heart, with no star." loading="lazy">
-        <img class="before" src="assets/demo-before.webp" width="1280" height="854" alt="A dusk landscape with a white star mark near the corner." loading="lazy">
+        <img src="assets/demo-after.webp" width="960" height="640" alt="The same corner after Frame Heart, with no star.">
+        <img class="before" src="assets/demo-before.webp" width="960" height="640" alt="A dusk landscape with a white star mark near the corner.">
         <span class="line" aria-hidden="true"></span>
         <span class="tag left">Before</span><span class="tag right">After</span>
         <input type="range" min="0" max="100" value="82" aria-label="Move between before and after">
@@ -135,7 +141,7 @@
   <section id="questions" class="section wrap" aria-labelledby="faq-title">
     <div class="faq">
       <div class="head"><h2 id="faq-title" class="h2" data-reveal>Questions</h2></div>
-      <div class="faq-list" data-reveal style="--i:1"><details name="faq" open><summary>Is it free?</summary><p>Yes, completely: no ads, no subscriptions and no paid extras.</p></details><details name="faq"><summary>What can it remove?</summary><p>Visible corner marks from AI generators: the Gemini sparkle, plus labels from Grok, Doubao, Jimeng, Tongyi, Qwen, Kling, Wenxin and Veo. It works on pictures and video.</p></details><details name="faq"><summary>Does it hide that a picture is AI-made?</summary><p>No. It removes the visible mark only. Invisible marks such as SynthID stay in the file. Please use Frame Heart on work you made or have the right to edit, and be open about AI work where that matters.</p></details><details name="faq"><summary>Will it touch a signature or a caption?</summary><p>It looks for see-through labels placed tight in a corner. Solid text, and text further in, is left alone. Very occasionally a label can be missed, or a see-through signature in the corner can look like one, so check your files with Preview.</p></details><details name="faq"><summary>Does anything get uploaded?</summary><p>No. Everything runs on your computer.</p></details><details name="faq"><summary>Does it need a graphics card?</summary><p>Removing a mark doesn’t. Upscaling is much faster with one, and it can run on the processor if you choose CPU in Settings.</p></details></div>
+      <div class="faq-list" data-reveal style="--i:1"><details name="faq" open><summary>Is it free?</summary><p>Yes, completely: no ads, no subscriptions and no paid extras.</p></details><details name="faq"><summary>What can it remove?</summary><p>Visible corner marks from AI generators: the Gemini sparkle, plus labels from Grok, Doubao, Jimeng, Tongyi, Qwen, Kling, Wenxin and Veo. It works on pictures and video, and particularly well on images and videos made with Gemini.</p></details><details name="faq"><summary>Does it hide that a picture is AI-made?</summary><p>No. It removes the visible mark only. Invisible marks such as SynthID stay in the file. Please use Frame Heart on work you made or have the right to edit, and be open about AI work where that matters.</p></details><details name="faq"><summary>Will it touch a signature or a caption?</summary><p>It looks for see-through labels placed tight in a corner. Solid text, and text further in, is left alone. Very occasionally a label can be missed, or a see-through signature in the corner can look like one, so check your files with Preview.</p></details><details name="faq"><summary>Does anything get uploaded?</summary><p>No. Everything runs on your computer.</p></details><details name="faq"><summary>Does it need a graphics card?</summary><p>Removing a mark doesn’t. Upscaling is much faster with one, and it can run on the processor if you choose CPU in Settings.</p></details></div>
     </div>
   </section>
 </main>
