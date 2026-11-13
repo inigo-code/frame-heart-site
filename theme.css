@@ -1,0 +1,78 @@
+/* Frame Heart: a Heart App for Windows. The layout is heart.css; this adds the colour and the window. */
+:root {
+  --bg: #0E0D10; --surface: #17151A; --surface-2: #221F27; --ink: #EFEDEA; --muted: #B3ACA2;
+  --accent: #7fb0ff; --accent-ink: #081322; --accent-hover: #a2c6ff; --field: #7fb0ff; --field-ink: #081322;
+  --font-display: 'Bebas Neue', Impact, 'Arial Narrow', sans-serif;
+  --font-text: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --display-weight: 400; --display-track: 0; --display-case: uppercase;
+  --s-h1: clamp(2.5rem, 0.2rem + 9.4vw, 7.5rem);
+  --s-h2: clamp(2.75rem, 1.6rem + 3.6vw, 5rem);
+  --s-head: clamp(2rem, 1.5rem + 1.4vw, 2.75rem);
+}
+
+.brand { font-size: 1.625rem; letter-spacing: 0.02em; }
+.brand img { border-radius: 0; }
+.h1 { line-height: 0.9; }
+.h2, .h3 { line-height: 0.95; }
+.way-mark { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 12px; background: var(--field-ink); color: var(--field); font-weight: 700; }
+
+/* The hero: the title across the page, the words and the window below it. */
+.hero { grid-template-columns: minmax(0, 1fr); gap: clamp(2rem, 4vw, 3.5rem); }
+.hero-text { gap: clamp(1.5rem, 3vw, 2.5rem); }
+.hero-side { display: grid; gap: 22px 32px; }
+@media (min-width: 961px) {
+  .hero-side { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); align-items: start; }
+  .hero-side .lede { max-width: 36ch; }
+  .hero-side .facts { grid-column: 1 / -1; }
+}
+.window { overflow: hidden; width: 100%; border-radius: 16px; background: var(--surface-2); box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45); }
+.window img { display: block; width: 100%; height: auto; }
+.row { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
+.row:nth-child(even) { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
+.row-media { display: block; padding: 0; background: none; }
+.row-media .compare { width: 100%; aspect-ratio: 3 / 2; }
+
+/* A wall of pictures */
+.wall { display: grid; gap: 10px; margin-top: clamp(1.5rem, 3vw, 2.5rem); }
+.wall-6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.wall-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.wall img { display: block; width: 100%; height: auto; border-radius: 12px; }
+
+/* Sites that take an account, as a plain list */
+.import { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--gap); }
+.import .head { margin: 0; align-content: start; }
+.sources { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 24px; }
+.sources strong { display: block; }
+.sources span { display: block; color: var(--muted); font-size: var(--s-small); }
+.import-after { margin-top: 22px; color: var(--muted); font-size: var(--s-small); }
+
+/* Before and after */
+.slider { max-width: 1040px; }
+.compare { position: relative; overflow: hidden; border-radius: 18px; aspect-ratio: 3 / 2; background: #000; touch-action: pan-y; }
+.compare img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.compare .before { clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
+.compare .line { position: absolute; top: 0; bottom: 0; left: var(--pos); width: 2px; margin-left: -1px; background: #F3EEE7; pointer-events: none; }
+.compare .line::after { content: ""; position: absolute; top: 50%; left: 50%; width: 42px; height: 42px; border: 2px solid #F3EEE7; border-radius: 50%; transform: translate(-50%, -50%); background: rgba(14, 13, 16, 0.7); }
+.compare .tag { position: absolute; top: 14px; padding: 3px 10px; border-radius: 8px; background: rgba(14, 13, 16, 0.72); font-size: var(--s-small); font-weight: 500; pointer-events: none; }
+.compare .tag.left { left: 14px; }
+.compare .tag.right { right: 14px; }
+.compare input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: ew-resize; }
+
+.notes { display: grid; gap: 16px; margin-top: 8px; font-size: var(--s-small); }
+.notes strong { display: block; }
+
+/* A page of plain words */
+.doc { display: grid; gap: 14px; max-width: 46rem; padding-block: clamp(2rem, 6vw, 4.5rem); }
+.doc h2 { margin-top: 24px; }
+.doc p { color: var(--muted); }
+.doc-lede { font-size: var(--s-lede); color: var(--ink) !important; }
+
+@media (max-width: 960px) {
+  .row, .row:nth-child(even) { grid-template-columns: minmax(0, 1fr); }
+  .import { grid-template-columns: 1fr; gap: 32px; }
+  .wall-6 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .wall-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 680px) {
+  .sources { grid-template-columns: 1fr; }
+}
